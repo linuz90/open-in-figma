@@ -1,0 +1,32 @@
+{
+  "background": {
+    "scripts": [
+      "request.js"
+    ]
+  },
+  "manifest_version": 2,
+  "name": "Open in Figma",
+  "version": "0.1",
+  "description": "Open Figma links in the desktop client.",
+  "homepage_url": "https://fabriziorinaldi.io/openinfigma/",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "author": "Fabrizio Rinaldi @linuz90",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "\u003Call_urls\u003E",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/extension16.png",
+      "32": "images/extension32.png",
+      "48": "images/extension48.png",
+      "128": "images/extension128.png"
+    }
+  }
+}
