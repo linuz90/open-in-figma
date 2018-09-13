@@ -31,7 +31,12 @@ Platform: Windows, Mac OS.
 
 ### Release notes 
 
-| Version | Notes |
-| --- | --- |
-| v.0.2 | After opening shared link in Figma desktop app, the extension closes the used tab in Chrome. |
-| v.0.1 | Initial Version. | 
+| Version | Notes | Authors |
+| --- | --- | --- |
+| v.0.3 | Now you can turn ON / OFF the extension by clicking on the icon | [Sergey Osokin](https://github.com/creold) |
+| v.0.2 | After opening shared link in Figma desktop app, the extension closes the used tab in Chrome. | [Sergey Osokin](https://github.com/creold) |
+| v.0.1 | Initial Version. | [Fabrizio Rinaldi](https://www.fabriziorinaldi.io/) |
+
+### Contribute
+
+Found a bug? Please submit a new issues on GitHub.
