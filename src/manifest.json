@@ -1,33 +1,39 @@
 {
-  "background": {
-    "scripts": [
-      "request.js"
-    ]
-  },
   "manifest_version": 2,
   "name": "Open in Figma",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Open Figma links in the desktop client.",
   "homepage_url": "https://fabriziorinaldi.io/openinfigma/",
   "icons": {
-    "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "16": "icons/icon-ext-16.png",
+    "48": "icons/icon-ext-48.png",
+    "128": "icons/icon-ext-128.png"
   },
   "author": "Fabrizio Rinaldi @linuz90, Sergey Osokin @creold",
-  "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "\u003Call_urls\u003E",
-    "*://*.figma.com/",
-    "tabs"
-  ],
   "browser_action": {
     "default_icon": {
-      "16": "images/extension16.png",
-      "32": "images/extension32.png",
-      "48": "images/extension48.png",
-      "128": "images/extension128.png"
+      "16": "icons/icon-on-16.png",
+      "32": "icons/icon-on-32.png",
+      "48": "icons/icon-on-48.png",
+      "128": "icons/icon-on-128.png"
+    },
+    "default_title": "Open in Figma"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.figma.com/*"],
+      "js": ["js/request.js"],
+      "run_at": "document_start"
     }
-  }
+  ],
+  "permissions": [
+    "storage",
+    "tabs",
+    "*://*.figma.com/*"
+  ]
 }
